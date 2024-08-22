@@ -1,0 +1,13 @@
+Insertion Sort - Part 1 
+void insertionSort(int ar_size, int * ar) { 
+int j = ar_size-1; 
+int v = ar[j]; 
+while(v < ar[j-1]) { 
+ar[j] = ar[j-1]; 
+j--; 
+print(ar_size, ar); 
+} 
+ar[j] = v; 
+ 
+print(ar_size, ar); 
+} 

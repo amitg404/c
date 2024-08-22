@@ -1,0 +1,12 @@
+
+FENWICK TREE ADD A VALUE 
+void add(int T[],int n, int k, int x) { 
+while (k <= n) { 
+T[k] += x; 
+k += k&-k; 
+} 
+display(T,n); 
+} 
+printf("\n Enter the position and value to be increased "); 
+scanf("%d%d",&k,&x); 
+add(T,n, k, x); 

@@ -1,0 +1,20 @@
+
+
+Counting Sort 1 
+ 
+scanf("%d",&n); 
+ 
+for(i=0;i<100;i++) 
+{ 
+b[i]=0; 
+} 
+for(i=0;i<n;i++) 
+{ 
+scanf("%d",&a); 
+b[a]++; 
+} 
+for(i=0;i<100;i++) 
+{ 
+printf("%d ", b[i]); 
+} 
+

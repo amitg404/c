@@ -1,0 +1,17 @@
+insertion Sort - Part 2 
+void insertionSort(int ar_size, int * ar) { 
+for (int i = 1; i < ar_size; ++i) { 
+int j = i - 1; 
+int p = ar[i]; 
+while (j >= 0 && p < ar[j]) { 
+ar[j+1] = ar[j]; 
+j--; 
+} 
+ar[j+1] = p; 
+printf("%d", ar[0]); 
+for (int k = 1; k < ar_size; ++k) { 
+printf(" %d", ar[k]); 
+} 
+printf("\n"); 
+} 
+} 

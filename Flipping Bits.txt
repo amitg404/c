@@ -1,0 +1,8 @@
+
+Flipping Bits 
+scanf("%d", &t); 
+while(t-- > 0) { 
+scanf("%u", &n); 
+printf("%u\n", ~n); 
+} 
+

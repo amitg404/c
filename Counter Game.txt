@@ -1,0 +1,34 @@
+
+
+Counter Game 
+scanf("%d",&t); 
+for(i=0;i<t;++i) 
+{ 
+win=0; 
+scanf("%lu",&n); 
+if(n==1) 
+printf("Richard\n"); 
+else 
+{ 
+while(n!=1) 
+{ 
+if(isPow2(n)) 
+n>>=1; 
+else 
+n-=largePow(n); 
+++win; 
+ 
+} 
+} 
+if(win%2==0) 
+printf("Richard\n"); 
+else 
+printf("Louise\n"); 
+} 
+return 0; 
+} 
+int isPow2(long unsigned int n) 
+{ 
+return !(n&(n-1)); 
+} 
+

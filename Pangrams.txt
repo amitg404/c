@@ -1,0 +1,11 @@
+
+PANGRAMS 
+for(i=0;i<l;i++) 
+{ 
+if(s[i]==' ') 
+continue; 
+if(s[i]>='a') 
+s[i]=s[i]-('a'-'A'); 
+if(!(f[s[i]]++)) 
+ans++; 
+} 
